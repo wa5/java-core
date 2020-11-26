@@ -1,0 +1,44 @@
+Syntax
+type variable = value;
+Where type is one of Java's types (such as int or String), and variable is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.
+
+To create a variable that should store text, look at the following example:http://media.geeksforgeeks.org/wp-content/uploads/Variables-in-Java.png
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    System.out.println(name);
+  }
+}
+int//
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    System.out.println(myNum);
+  }
+}
+You can also declare a variable without assigning the value, and assign the value later:
+public class Main {
+  public static void main(String[] args) {
+    int myNum;
+    myNum = 15;
+    System.out.println(myNum);
+  }
+}
+Note that if you assign a new value to an existing variable, it will overwrite the previous value:
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 15;
+    myNum = 20;  // myNum is now 20
+    System.out.println(myNum);
+  }
+}
+
+Final Variables
+However, you can add the final keyword if you don't want others (or yourself) to overwrite existing values (this will declare the variable as "final" or "constant", which means unchangeable and read-only):
+public class Main {
+  public static void main(String[] args) {
+    final int myNum = 15;
+    myNum = 20; // will generate an error
+    System.out.println(myNum);
+  }
+}
