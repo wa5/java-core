@@ -1,0 +1,127 @@
+Types of Constructor
+In Java, constructors can be divided into 3 types:
+
+No-Arg Constructor
+Parameterized Constructor
+Default Constructor
+
+
+1. Java No-Arg Constructors
+Similar to methods, a Java constructor may or may not have any parameters (arguments).
+
+If a constructor does not accept any parameters, it is known as a no-argument constructor. For example,
+
+private Constructor() {
+   // body of the constructor
+}
+
+Example 2: Java private no-arg constructor
+class Main {
+
+  int i;
+
+  // constructor with no parameter
+  private Main() {
+    i = 5;
+    System.out.println("Constructor is called");
+  }
+
+  public static void main(String[] args) {
+
+    // calling the constructor without any parameter
+    Main obj = new Main();
+    System.out.println("Value of i: " + obj.i);
+  }
+}
+
+ the above example, we have created a constructor Main(). Here, the constructor does not accept any parameters. Hence, it is known as a no-arg constructor.
+
+Notice that we have declared the constructor as private.
+
+Once a constructor is declared private, it cannot be accessed from outside the class. So, creating objects from outside the class is prohibited using the private constructor.
+
+Here, we are creating the object inside the same class. Hence, the program is able to access the constructor. To learn more, visit Java Implement Private Constructor.
+
+However, if we want to create objects outside the class, then we need to declare the constructor as public.
+
+Example 3: Java public no-arg constructors
+class Company {
+  String name;
+
+  // public constructor
+  public Company() {
+    name = "Programiz";
+  }
+}
+
+public class Main {
+
+  public static void main(String[] args) {
+
+    // object is created in another class
+    Company obj = new Company();
+    System.out.println("Company name = " + obj.name);
+  }
+}
+
+2. Java Parameterized Constructor
+A Java constructor can also accept one or more parameters. Such constructors are known as parameterized constructors (constructor with parameters).
+
+Example 4: Parameterized constructor
+class Main {
+
+  String languages;
+
+  // constructor accepting single value
+  Main(String lang) {
+    languages = lang;
+    System.out.println(languages + " Programming Language");
+  }
+
+  public static void main(String[] args) {
+
+    // call constructor by passing a single value
+    Main obj1 = new Main("Java");
+    Main obj2 = new Main("Python");
+    Main obj3 = new Main("C");
+  }
+}
+In the above example, we have created a constructor named Main(). Here, the constructor takes a single parameter. Notice the expression,
+
+
+3. Java Default Constructor
+If we do not create any constructor, the Java compiler automatically create a no-arg constructor during the execution of the program. This constructor is called default constructor.
+Example 5: Default Constructor
+class Main {
+
+  int a;
+  boolean b;
+
+  public static void main(String[] args) {
+
+    // A default constructor is called
+    Main obj = new Main();
+
+    System.out.println("Default Value:");
+    System.out.println("a = " + obj.a);
+    System.out.println("b = " + obj.b);
+  }
+}
+
+class Main {
+  private String name;
+
+  // constructor
+  Main() {
+    System.out.println("Constructor Called:");
+    name = "Programiz";
+  }
+
+  public static void main(String[] args) {
+
+    // constructor is invoked while
+    // creating an object of the Main class
+    Main obj = new Main();
+    System.out.println("The name is " + obj.name);
+  }
+}
