@@ -1,0 +1,91 @@
+Java Break Statement with Loop
+//Java Program to demonstrate the use of break statement    
+//inside the for loop.  
+public class BreakExample {  
+public static void main(String[] args) {  
+    //using for loop  
+    for(int i=1;i<=10;i++){  
+        if(i==5){  
+            //breaking the loop  
+            break;  
+        }  
+        System.out.println(i);  
+    }  
+}  
+}  
+
+Java Break Statement with Inner Loop
+//Java Program to illustrate the use of break statement    
+//inside an inner loop   
+public class BreakExample2 {  
+public static void main(String[] args) {  
+            //outer loop   
+            for(int i=1;i<=3;i++){    
+                    //inner loop  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using break statement inside the inner loop  
+                            break;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}  
+Java Break Statement with Labeled For Loop
+We can use break statement with a label. This feature is introduced since JDK 1.5. So, we can break any loop in Java now whether it is outer loop or inner.
+//Java Program to illustrate the use of continue statement  
+//with label inside an inner loop to break outer loop  
+public class BreakExample3 {  
+public static void main(String[] args) {  
+            aa:  
+            for(int i=1;i<=3;i++){    
+                    bb:  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using break statement with label  
+                            break aa;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}
+Java Break Statement in while loop
+
+//Java Program to demonstrate the use of break statement  
+//inside the while loop.  
+public class BreakWhileExample {  
+public static void main(String[] args) {  
+    //while loop  
+    int i=1;  
+    while(i<=10){  
+        if(i==5){  
+            //using break statement  
+            i++;  
+            break;//it will break the loop  
+        }  
+        System.out.println(i);  
+        i++;  
+    }  
+}  
+} 
+Java Break Statement in do-while loop
+/Java Program to demonstrate the use of break statement  
+//inside the Java do-while loop.  
+public class BreakDoWhileExample {  
+public static void main(String[] args) {  
+    //declaring variable  
+    int i=1;  
+    //do-while loop  
+    do{  
+        if(i==5){  
+           //using break statement  
+           i++;  
+           break;//it will break the loop  
+        }  
+        System.out.println(i);  
+        i++;  
+    }while(i<=10);  
+}  
+}  
