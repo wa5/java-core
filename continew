@@ -1,0 +1,95 @@
+//Java Program to demonstrate the use of continue statement  
+//inside the for loop.  
+public class ContinueExample {  
+public static void main(String[] args) {  
+    //for loop  
+    for(int i=1;i<=10;i++){  
+        if(i==5){  
+            //using continue statement  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+    }  
+}  
+} 
+
+
+Java Continue Statement with Inner Loop
+It continues inner loop only if you use the continue statement inside the inner loop.
+
+//Java Program to illustrate the use of continue statement  
+//inside an inner loop  
+public class ContinueExample2 {  
+public static void main(String[] args) {  
+            //outer loop  
+            for(int i=1;i<=3;i++){    
+                    //inner loop  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using continue statement inside inner loop  
+                            continue;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}
+
+
+
+Java Continue Statement with Labeled For Loop
+We can use continute statement with a label. This feature is introduced since JDK 1.5. So, we can continue any loop in Java now whether it is outer loop or inner.
+//Java Program to illustrate the use of continue statement  
+//with label inside an inner loop to continue outer loop  
+public class ContinueExample3 {  
+public static void main(String[] args) {  
+            aa:  
+            for(int i=1;i<=3;i++){    
+                    bb:  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using continue statement with label  
+                            continue aa;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}
+Java Continue Statement in while loop
+//Java Program to demonstrate the use of continue statement  
+//inside the while loop.  
+public class ContinueWhileExample {  
+public static void main(String[] args) {  
+    //while loop  
+    int i=1;  
+    while(i<=10){  
+        if(i==5){  
+            //using continue statement  
+            i++;  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+        i++;  
+    }  
+}  
+} 
+Java Continue Statement in do-while loop
+//Java Program to demonstrate the use of continue statement  
+//inside the Java do-while loop.  
+public class ContinueDoWhileExample {  
+public static void main(String[] args) {  
+    //declaring variable  
+    int i=1;  
+    //do-while loop  
+    do{  
+        if(i==5){  
+                //using continue statement  
+                 i++;  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+        i++;  
+    }while(i<=10);  
+}  
+}  
