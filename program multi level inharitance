@@ -1,0 +1,38 @@
+import static javax.swing.JOptionPane.showMessageDialog;
+import javax.swing.*;
+class A 
+{ 
+public void display() 
+    { 
+        System.out.println("GeeksforGeeks"); 
+    } 
+} 
+ 
+class u 
+{ 
+	
+public void display3() 
+    { 
+	float b=4;
+       // System.out.println("juu"); 
+       // showMessageDialog(null,"juu");
+    } 
+} 
+ 
+ class  B extends u
+{ 
+public static void main(String args[]) 
+    { 
+	int a=20;
+	showMessageDialog(null,a);
+	 
+	B obj = new B(); 
+	A obj2 = new A(); 
+        // Trying to access private method
+        // of another class 
+        obj.display3(); 
+        //obj.a;
+        showMessageDialog(null,obj.b);
+        //obj2.display3(); 
+    } 
+} 
