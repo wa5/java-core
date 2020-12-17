@@ -1,0 +1,27 @@
+class Ani {
+	int k=007;
+void eat(){
+	
+	System.out.println("eating...");
+	// int u=9;
+}
+}
+class Animal extends Ani{
+	int u=9;
+void eat(){
+	
+	System.out.println("eating...");
+	 int u=9;
+}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}  
+}  
+class TestInheritance{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+d.bark();  
+d.eat();  
+
+System.out.println(d.k);
+}} 
