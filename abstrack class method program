@@ -1,0 +1,33 @@
+
+abstract class Vahicle2 {
+
+	 
+	 abstract void start();
+	}
+
+ class Car extends Vahicle2{
+
+	 void start() {
+		 System.out.println("starts with key ");
+	 }
+	}
+
+ class Scooter extends Vahicle2{
+
+	 void start() {
+		 System.out.println("starts with kick ");
+	 }
+	}
+public class VIshnu1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Vahicle2 p=new Vahicle2();
+		//VIshnu1 p=new VIshnu1();
+		Scooter p=new Scooter();
+		p.start();
+		System.out.println("hi every one ");
+		//System.out.println(a);
+	}
+
+}
