@@ -1,0 +1,40 @@
+interface Ui {
+	//public static final int a=10;//all variables must be of public static final
+	//protected abstract void show();
+	//default abstract void show();
+	// public abstract void show();
+	 void show();
+	/* void g() {
+		 // no body same like abstraction
+	 }*/
+	 /*default void g() {
+		 // it works
+	 }*/
+	 /*static void g() {
+	 // it works
+}*/
+}
+
+interface Ui2 {
+	
+	 void display();
+	
+}
+class VIshnu1 implements Ui,Ui2{
+	
+	
+	public void display() {
+		 System.out.println("starts  ");
+	}
+	public void show() {
+		 System.out.println("starts with kickqq ");
+	}
+	public static void main(String[] args) {
+		
+		VIshnu1 j=new VIshnu1();
+		//Ui j=new Ui();
+		j.show();
+		j.display();
+	}
+	}
+
