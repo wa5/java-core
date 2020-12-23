@@ -1,0 +1,29 @@
+class VIshnu3 {
+	int a=29;
+	void m1() {
+		System.out.println("parent  ");
+	}
+}
+ 
+class VIshnu2 extends VIshnu3{
+	int a=20;
+	void m1() {
+		System.out.println("child  ");
+	}
+}
+
+
+
+class VIshnu1 extends VIshnu2{
+	
+	
+	public static void main(String[] args) {
+		VIshnu3 j=new VIshnu3();
+		//VIshnu3 j2=new VIshnu1();
+		//VIshnu3 j=new VIshnu1();
+		//Ui j=new Ui();
+		j.m1();
+		System.out.println("starts  "+j.a);
+		//System.out.println("starts  "+j2.a);
+	}
+	}
