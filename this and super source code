@@ -20,3 +20,33 @@ class VIshnu1 extends VIshnu3{
 		j.kl(30);
 	}
 	}
+
+for method
+class VIshnu3 {
+	int a=10;
+	void chill() {
+		System.out.println("im chilling");
+	}
+	
+}
+ 
+
+class VIshnu1 extends VIshnu3{
+	int a=20;
+	
+	void chill() {
+		System.out.println("im not chilling");
+	}
+	
+	void show() {
+		super.chill();
+	}
+	
+	public static void main(String[] args) {
+		VIshnu1 j=new VIshnu1();
+	
+	j.show();
+		
+		
+	}
+	}
