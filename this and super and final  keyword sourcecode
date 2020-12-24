@@ -29,3 +29,31 @@ public class cwh_47_this_super {
         System.out.println(e.getA());
     }
 }
+
+final key word
+
+//final class VIshnu2 {// no one can  extend
+class VIshnu2 {
+//final void m1() {//no one can ovverride
+	void m1() {
+		 System.out.println("im vishnu method");
+	}
+}
+
+class VIshnu1 extends VIshnu2 {
+	
+	
+	void m1() {
+		 System.out.println("im vishnu1 method");
+	}
+	public static void main(String[] args) {
+		
+		VIshnu1 obj=new VIshnu1();
+	obj.m1();
+	//final int i=20;
+	//int i=20;
+	// i=i+10;	
+	// System.out.println(i);
+		
+	}
+	}
