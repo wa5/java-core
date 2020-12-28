@@ -1,0 +1,18 @@
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//IMPLICT
+	
+	int a=10;
+	double a2=a;
+	
+	//explicit type casying
+	double r=20;
+	int r1=(int)r;
+	parsint();
+	/*String NAME="9";
+	int n1=(int)NAME;*/
+	System.out.println(NAME);
+		
+	}
