@@ -3,7 +3,7 @@ public class DataStreamExample {
      public static void main(String args[]){    
              
             FileInputStream fin=new FileInputStream("D:\\abc.txt"); //exception will be given   
-             
+             Class.forName("com.mysql.jdbc.Driver");//driver class for mysql
            
          }    
         } 
