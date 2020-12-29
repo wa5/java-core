@@ -1,0 +1,13 @@
+public class Parse {
+
+	public static void main(String[] args) {
+		
+		
+		
+		int i=99;
+		String dr=String.valueOf(i);
+		System.out.println(dr);
+		String typej = dr.getClass().getName();
+		System.out.println(typej);
+	}
+}
