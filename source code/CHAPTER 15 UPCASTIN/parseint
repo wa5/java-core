@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+		
+		String a="8";
+		Double S = Double.parseDouble(a);
+		int d=Integer.parseInt(a);
+		System.out.println(S);
+		String type = a.getClass().getName();
+		System.out.println(type);
+	}
