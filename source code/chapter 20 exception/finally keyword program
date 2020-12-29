@@ -1,0 +1,23 @@
+public class Finallypro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 try {
+		        int num1 = 5/0;
+		      }
+		      catch (Throwable e) {
+		         
+		          
+		          System.out.println(e); 
+		      }finally
+		      {
+		    	  System.out.println("hhhh");  
+		    	  
+		      }
+		
+		
+		
+	}
+
+}
