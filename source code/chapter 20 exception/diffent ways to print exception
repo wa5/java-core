@@ -1,0 +1,29 @@
+class Program {
+    public static void foo() {
+      try {
+        int num1 = 5/0;
+      }
+      catch (Throwable e) {
+         // e.printStackTrace();//name discription stack trace
+          e.toString();//name discription
+          e.getMessage();// discription
+          System.out.println(e.getMessage()); 
+          System.out.println(e.toString());
+         // System.out.print(e); 
+      }
+    }
+}
+
+
+public class PrintExceptions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Program.foo();
+		
+		
+		
+	}
+
+}
