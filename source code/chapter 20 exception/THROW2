@@ -1,0 +1,26 @@
+import java.io.*;  
+class M extends RuntimeException{  
+ public M(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+void method(String F) {
+	 System.out.println(F); 
+ }  
+}  
+public class Testthrows2{  
+   public static void main(String args[]){  
+	   
+	   int age=16;
+	   if(age<18) {
+		   
+		   throw new M("hhh");
+	   }
+	   else
+	   {
+		   
+		   System.out.println("normal flow...");    
+	   }
+   
+}
+}
