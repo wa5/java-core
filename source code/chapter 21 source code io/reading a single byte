@@ -1,0 +1,19 @@
+import java.io.FileInputStream; 
+public class readingsinglebyte {
+
+	
+	 public static void main(String args[]){    
+         try{    
+           FileInputStream fin=new FileInputStream("D:\\abc.txt"); //create objet   
+              
+           int w=fin.read();  
+           int w1=fin.read();
+           System.out.print(w); //without type casting
+            System.out.print((char)w); //type casting   
+            System.out.print((char)w1); 
+           fin.close();    
+         }catch(Exception e){System.out.println(e);}    
+        } 	
+	
+	
+}
