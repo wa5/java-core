@@ -1,0 +1,3 @@
+private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
+    Files.copy(source.toPath(), dest.toPath());
+}
