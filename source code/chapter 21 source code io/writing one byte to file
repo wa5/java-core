@@ -1,0 +1,15 @@
+import java.io.*;  //import io  class
+public class DataStreamExample {  
+     public static void main(String args[]){    
+          try{    
+            FileOutputStream fin=new FileOutputStream("D:\\abc.txt"); //create objet   
+               
+        fin.write(97);//a   
+        fin.write(98); //b 
+        fin.write(99);//c 
+            // System.out.print();    
+                
+            fin.close();    
+          }catch(Exception e){System.out.println(e);}    
+         }    
+        }
