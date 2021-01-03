@@ -1,0 +1,21 @@
+class MultiRannable implements Runnable{  
+public void run(){  
+System.out.println("thread is running2...");  
+}
+}
+
+
+class SingleRannable implements Runnable{  
+public void run(){  
+System.out.println("thread is running...");  
+}  
+  
+public static void main(String args[]){  
+	SingleRannable m1=new SingleRannable();  
+Thread t1 =new Thread(m1);  
+t1.start();  
+MultiRannable m2=new MultiRannable();
+Thread t2 =new Thread(m2);
+t2.start();  
+ }  
+} 
